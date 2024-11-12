@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #1d1d1d; 
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #f67e00; 
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .input-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333; 
+    color: #fff; 
+    font-size: 16px;
+  }
+  
+  #add-task-btn {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f67e00; 
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #add-task-btn:hover {
+    background-color: #f57200;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    background-color: #2c2c2c; 
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  li:hover {
+    background-color: #f67e00; 
+  }
+
+  button.delete-btn, button.tick-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+
+  button.delete-btn:hover, button.tick-btn:hover {
+    color: #f67e00; 
+  }
+
+  li.completed {
+    text-decoration: line-through;
+    color: #aaa; 
+    opacity: 0.6;
+  }
+
+  li.deleted {
+    animation: slideOut 0.5s forwards; 
+  }
+
+  li.completed {
+    transition: transform 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideOut {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+  
+ 
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+  /* Fade-in effect for each new task */
+
+  
+ 
+  
+
+ 
+  
+ 
+  
+  
+  
+ 
+  
+  /* Smooth transition when marking tasks as completed */
+ 
+  
+  
+  
